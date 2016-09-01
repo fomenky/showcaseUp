@@ -7,18 +7,36 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class ViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //let loginButton	= FBSDKLoginButton()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func fbBtnPressed(sender: UIButton!)
+    {
+        let fbLogin = FBSDKLoginManager()
+        fbLogin.logInWithReadPermissions(["email"]) { (fbLoginResult: FBSDKLoginManagerLoginResult!, fbErr: NSError!) in
+            if let err = fbErr{
+                print(err.localizedDescription)
+            }else{
+                let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
+                print("Successfully logged in to facebook. \(accessToken)")
+            }
+        }
+    }
+    
 
 
 }
