@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A35E8E7033AB45B3CE43584B /* Pods_showcaseUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8147D8E1C999347B70B1AC6F /* Pods_showcaseUp.framework */; };
+		B5B9FC781D78829B00DB027F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B9FC771D78829B00DB027F /* DataService.swift */; };
+		B5B9FC7A1D78970D00DB027F /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9FC791D78970D00DB027F /* libicucore.tbd */; };
+		B5B9FC7C1D78972800DB027F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9FC7B1D78972800DB027F /* libc++.tbd */; };
+		B5B9FC7E1D78974000DB027F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9FC7D1D78974000DB027F /* CFNetwork.framework */; };
+		B5B9FC801D78975200DB027F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9FC7F1D78975200DB027F /* Security.framework */; };
+		B5B9FC821D78976000DB027F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9FC811D78976000DB027F /* SystemConfiguration.framework */; };
+		B5B9FC881D79195000DB027F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5B9FC871D79195000DB027F /* GoogleService-Info.plist */; };
+		B5B9FC8C1D79419300DB027F /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B9FC8B1D79419300DB027F /* RegisterVC.swift */; };
 		B5F4FB981D773A0100A46A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4FB971D773A0100A46A9B /* AppDelegate.swift */; };
 		B5F4FB9A1D773A0100A46A9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4FB991D773A0100A46A9B /* ViewController.swift */; };
 		B5F4FB9D1D773A0100A46A9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F4FB9B1D773A0100A46A9B /* Main.storyboard */; };
@@ -30,6 +38,14 @@
 
 /* Begin PBXFileReference section */
 		8147D8E1C999347B70B1AC6F /* Pods_showcaseUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_showcaseUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B9FC771D78829B00DB027F /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B5B9FC791D78970D00DB027F /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		B5B9FC7B1D78972800DB027F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B5B9FC7D1D78974000DB027F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B5B9FC7F1D78975200DB027F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B5B9FC811D78976000DB027F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B5B9FC871D79195000DB027F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5B9FC8B1D79419300DB027F /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		B5F4FB941D773A0100A46A9B /* showcaseUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = showcaseUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F4FB971D773A0100A46A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F4FB991D773A0100A46A9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +75,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B9FC821D78976000DB027F /* SystemConfiguration.framework in Frameworks */,
+				B5B9FC801D78975200DB027F /* Security.framework in Frameworks */,
+				B5B9FC7E1D78974000DB027F /* CFNetwork.framework in Frameworks */,
+				B5B9FC7C1D78972800DB027F /* libc++.tbd in Frameworks */,
+				B5B9FC7A1D78970D00DB027F /* libicucore.tbd in Frameworks */,
 				B5F4FBC41D7786D900A46A9B /* FBSDKLoginKit.framework in Frameworks */,
 				B5F4FBC51D7786D900A46A9B /* FBSDKMessengerShareKit.framework in Frameworks */,
 				B5F4FBC31D7786D900A46A9B /* FBSDKCoreKit.framework in Frameworks */,
@@ -73,6 +94,11 @@
 		672798150239EE6075154ED0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5B9FC811D78976000DB027F /* SystemConfiguration.framework */,
+				B5B9FC7F1D78975200DB027F /* Security.framework */,
+				B5B9FC7D1D78974000DB027F /* CFNetwork.framework */,
+				B5B9FC7B1D78972800DB027F /* libc++.tbd */,
+				B5B9FC791D78970D00DB027F /* libicucore.tbd */,
 				8147D8E1C999347B70B1AC6F /* Pods_showcaseUp.framework */,
 			);
 			name = Frameworks;
@@ -85,6 +111,14 @@
 				C9447F0DA225F314BE54C1B3 /* Pods-showcaseUp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5B9FC761D78827000DB027F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5B9FC771D78829B00DB027F /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		B5F4FB8B1D773A0100A46A9B = {
@@ -108,6 +142,7 @@
 		B5F4FB961D773A0100A46A9B /* showcaseUp */ = {
 			isa = PBXGroup;
 			children = (
+				B5B9FC761D78827000DB027F /* Services */,
 				B5F4FBC61D7788A200A46A9B /* Frameworks */,
 				B5F4FBB91D776D8200A46A9B /* Utilities */,
 				B5F4FBAC1D773A4900A46A9B /* Resources */,
@@ -115,11 +150,11 @@
 				B5F4FBAA1D773A2900A46A9B /* View */,
 				B5F4FBA91D773A1E00A46A9B /* Controller */,
 				B5F4FB971D773A0100A46A9B /* AppDelegate.swift */,
-				B5F4FB991D773A0100A46A9B /* ViewController.swift */,
 				B5F4FB9B1D773A0100A46A9B /* Main.storyboard */,
 				B5F4FB9E1D773A0100A46A9B /* Assets.xcassets */,
 				B5F4FBA01D773A0100A46A9B /* LaunchScreen.storyboard */,
 				B5F4FBA31D773A0100A46A9B /* Info.plist */,
+				B5B9FC871D79195000DB027F /* GoogleService-Info.plist */,
 			);
 			path = showcaseUp;
 			sourceTree = "<group>";
@@ -127,6 +162,8 @@
 		B5F4FBA91D773A1E00A46A9B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B5F4FB991D773A0100A46A9B /* ViewController.swift */,
+				B5B9FC8B1D79419300DB027F /* RegisterVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -242,6 +279,7 @@
 			files = (
 				B5F4FBB11D773AB800A46A9B /* NotoSans-Bold.ttf in Resources */,
 				B5F4FBA21D773A0100A46A9B /* LaunchScreen.storyboard in Resources */,
+				B5B9FC881D79195000DB027F /* GoogleService-Info.plist in Resources */,
 				B5F4FBB81D7760E900A46A9B /* Lobster_1.3.otf in Resources */,
 				B5F4FBB21D773AB800A46A9B /* NotoSans-BoldItalic.ttf in Resources */,
 				B5F4FBB31D773AB800A46A9B /* NotoSans-Italic.ttf in Resources */,
@@ -307,6 +345,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F4FBBF1D7777D100A46A9B /* MaterialTextField.swift in Sources */,
+				B5B9FC8C1D79419300DB027F /* RegisterVC.swift in Sources */,
+				B5B9FC781D78829B00DB027F /* DataService.swift in Sources */,
 				B5F4FBB61D77424500A46A9B /* MaterialView.swift in Sources */,
 				B5F4FB9A1D773A0100A46A9B /* ViewController.swift in Sources */,
 				B5F4FB981D773A0100A46A9B /* AppDelegate.swift in Sources */,

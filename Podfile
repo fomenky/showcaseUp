@@ -7,5 +7,8 @@ target 'showcaseUp' do
 
   # Pods for showcaseUp
 pod 'Firebase/Auth'
+pod ‘Firebase/Core’
+pod ‘Firebase/Database’
+pod 'Google/SignIn'
 
-end
+end 
