@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A35E8E7033AB45B3CE43584B /* Pods_showcaseUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8147D8E1C999347B70B1AC6F /* Pods_showcaseUp.framework */; };
+		B5671AA01D7A138000B53A58 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5671A9F1D7A138000B53A58 /* FeedVC.swift */; };
+		B5671AA21D7A151200B53A58 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5671AA11D7A151200B53A58 /* PostCell.swift */; };
 		B5B9FC781D78829B00DB027F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B9FC771D78829B00DB027F /* DataService.swift */; };
 		B5B9FC7A1D78970D00DB027F /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9FC791D78970D00DB027F /* libicucore.tbd */; };
 		B5B9FC7C1D78972800DB027F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9FC7B1D78972800DB027F /* libc++.tbd */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		8147D8E1C999347B70B1AC6F /* Pods_showcaseUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_showcaseUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5671A9F1D7A138000B53A58 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		B5671AA11D7A151200B53A58 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		B5B9FC771D78829B00DB027F /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		B5B9FC791D78970D00DB027F /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		B5B9FC7B1D78972800DB027F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -164,6 +168,7 @@
 			children = (
 				B5F4FB991D773A0100A46A9B /* ViewController.swift */,
 				B5B9FC8B1D79419300DB027F /* RegisterVC.swift */,
+				B5671A9F1D7A138000B53A58 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 				B5F4FBB51D77424500A46A9B /* MaterialView.swift */,
 				B5F4FBBC1D77712200A46A9B /* MaterialButton.swift */,
 				B5F4FBBE1D7777D100A46A9B /* MaterialTextField.swift */,
+				B5671AA11D7A151200B53A58 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5671AA01D7A138000B53A58 /* FeedVC.swift in Sources */,
 				B5F4FBBF1D7777D100A46A9B /* MaterialTextField.swift in Sources */,
 				B5B9FC8C1D79419300DB027F /* RegisterVC.swift in Sources */,
 				B5B9FC781D78829B00DB027F /* DataService.swift in Sources */,
@@ -352,6 +359,7 @@
 				B5F4FB981D773A0100A46A9B /* AppDelegate.swift in Sources */,
 				B5F4FBBB1D776DAD00A46A9B /* Constants.swift in Sources */,
 				B5F4FBBD1D77712200A46A9B /* MaterialButton.swift in Sources */,
+				B5671AA21D7A151200B53A58 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
