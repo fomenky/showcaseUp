@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         //UPDATE: Use logInWithReadPermissions fromviewController
         fbLogin.logInWithReadPermissions(["email"], fromViewController: self, handler: {
             (fbResult: FBSDKLoginManagerLoginResult!, fbError: NSError!) in
+            
             if fbError != nil{
                print("Login Failed. \(fbError)")
             } else{
@@ -70,18 +71,32 @@ class ViewController: UIViewController {
         if let email = emailTextField.text where email != "",
              let pwd = pwdTextField.text where pwd != ""
         {
-            FIRAuth.auth()?.createUserWithEmail(email, password: pwd, completion: { (user: FIRUser?, error: NSError?) in
+            FIRAuth.auth()?.signInWithEmail(email, password: pwd, completion: {
+                (authData: FIRUser?, error: NSError?) in
                 if error != nil{
-                    print(error)
+                    print(error?.code)
                     
                     if error?.code == STATUS_ACCOUNT_NONEXISTENT{
-                        self.showLoginErrorAlert("Account Does Not Exist", msg: "Login with Facebook/Twitter or create new account")
+                        self.showLoginErrorAlert("Account Does Not Exist", msg: "Register or Login with Facebook/Twitter")
+                    } else if error?.code == STATUS_EMAIL_INVALID{
+                        self.showLoginErrorAlert("Email Format Invalid", msg: "The email address is badly formatted")
+                    } else if error?.code == STATUS_INVALID_PASSWORD{
+                        self.showLoginErrorAlert("Invalid Password", msg: "The password you entered is incorrect")
                     }
+                }else{
+                    print("LOGGED IN \(authData?.providerID)")
+                    let user: [String: String] = ["provider": "email", "blahuser": "testUser"]
+                    
+                    DataService.instance.createFirebaseUser(authData!.uid, user: user)
+                    
+                    //Save UserID (uid)
+                    NSUserDefaults.standardUserDefaults().setValue(authData?.uid, forKey: KEY_UID)
+                    self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                 }
             })
             
         } else{
-            showLoginErrorAlert("Email and Password Required", msg: "Sorry, please enter both email and password to proceed")
+            showLoginErrorAlert("Email and Password Required", msg: "Please enter both email and password to proceed")
         }
         
     }
