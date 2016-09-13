@@ -10,5 +10,7 @@ pod 'Firebase/Auth'
 pod ‘Firebase/Core’
 pod ‘Firebase/Database’
 pod 'Google/SignIn'
+pod 'Alamofire', '~> 3.0'
+
 
 end 
