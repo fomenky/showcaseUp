@@ -58,6 +58,9 @@ class ViewController: UIViewController {
                 }else {
                     print("Logged In! \(authData?.providerID)")
                     
+                    let user: [String: String] = ["provider": authData!.providerID, "blah": "FacebookUser"]
+                    DataService.instance.createFirebaseUser((authData?.uid)!, user: user)
+                    
                     NSUserDefaults.standardUserDefaults().setValue(authData?.uid, forKey: KEY_UID)
                     self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                 }
@@ -85,9 +88,6 @@ class ViewController: UIViewController {
                     }
                 }else{
                     print("LOGGED IN \(authData?.providerID)")
-                    let user: [String: String] = ["provider": "email", "blahuser": "testUser"]
-                    
-                    DataService.instance.createFirebaseUser(authData!.uid, user: user)
                     
                     //Save UserID (uid)
                     NSUserDefaults.standardUserDefaults().setValue(authData?.uid, forKey: KEY_UID)
