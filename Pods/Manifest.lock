@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (3.5.0)
   - Firebase/Analytics (3.5.2):
     - FirebaseAnalytics (~> 3.3)
   - Firebase/Auth (3.5.2):
@@ -49,12 +50,14 @@ PODS:
     - GoogleSymbolUtilities (~> 1.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.0)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Google/SignIn
 
 SPEC CHECKSUMS:
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
   Firebase: 94e63112efcad75226c0356a8f3032397b8547c9
   FirebaseAnalytics: d968d4d5f6aeb795cd64144337bcd233e530efc6
   FirebaseAuth: 26fd291c3b552fc9658420b867520d5ae080421c
@@ -70,6 +73,6 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
 
-PODFILE CHECKSUM: f71bffc9310860f7dfe48028430f55fc63cfc5b7
+PODFILE CHECKSUM: 4d2e811d687375f91fdec61a6408bf323495034f
 
 COCOAPODS: 1.0.1
