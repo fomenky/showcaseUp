@@ -58,8 +58,8 @@ class RegisterVC: UIViewController {
                 self.showLoginErrorAlert("Incorrect Password", msg: "Please check if you have entered the correct password")
             } else{
                 print("LOGGED IN \(authData?.providerID)")
-                let user: [String: String] = ["provider": "email", "blahuser": "testUser"]
                 
+                let user: [String: String] = ["provider": authData!.providerID, "blahuser": "emailTest"]                
                 DataService.instance.createFirebaseUser(authData!.uid, user: user)
                 
                 //Save UserID (uid)
